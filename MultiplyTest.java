@@ -9,8 +9,8 @@ public class MultiplyTest {
 
 	@Test
 	public void testMultiply() {
-		Junits test = new Junits();
-		int result = test.multiply(3,5);
+		Junits test = new Junits()
+		int result = test.multiply(3,5)
 		assertEquals(16,result);
 	}
 
