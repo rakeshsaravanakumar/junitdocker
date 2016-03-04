@@ -11,7 +11,7 @@ public class MultiplyTest {
 	public void testMultiply() {
 		Junits test = new Junits();
 		int result = test.multiply(3,5);
-		assertEquals(15,result);
+		assertEquals(18,result);
 	}
 
 }
