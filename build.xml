@@ -82,7 +82,6 @@
         </junit>
     </target>
     <target name="AllTests (1)">
-    	<echo message="test123"/>
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
