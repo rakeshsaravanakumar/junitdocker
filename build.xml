@@ -83,11 +83,12 @@
     </target>
     <target name="AllTests (1)">
         <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
+        <junit fork="yes" printsummary="withOutAndErr" haltonfailure="no" failureproperty="test.failed">
             <formatter type="xml"/>
             <test name="testpackage.AllTests" todir="${junit.output.dir}"/>
             <classpath refid="rakesh.classpath"/>
         </junit>
+        <fail message="Test failure detected, check test results." if="test.failed" />
     </target>
               	
     <!--<target name="unit-test-1" >
