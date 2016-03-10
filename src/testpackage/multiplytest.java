@@ -11,7 +11,7 @@ public class multiplytest {
 	public void testMultiply() {
 		rakeshclass test = new rakeshclass();
 		int result = test.multiply(3, 5);
-		assertEquals(15, result);
+		assertEquals(14, result);
 	}
 
 }
